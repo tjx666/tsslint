@@ -26,6 +26,14 @@ export default defineConfig({
 		'no-unnecessary-condition': convertRule((await import('./node_modules/@typescript-eslint/eslint-plugin/dist/rules/no-unnecessary-condition.js')).default.default, [{
 			allowConstantLoopConditions: true,
 		}], 0),
+		'consistent-type-exports': convertRule((await import('./node_modules/@typescript-eslint/eslint-plugin/dist/rules/consistent-type-exports.js')).default.default, [{
+		}], 0),
+		'await-thenable': convertRule((await import('./node_modules/@typescript-eslint/eslint-plugin/dist/rules/await-thenable.js')).default.default, [{
+		}], 0),
+		'require-await': convertRule((await import('./node_modules/@typescript-eslint/eslint-plugin/dist/rules/require-await.js')).default.default, [{
+		}], 0),
+		'return-await': convertRule((await import('./node_modules/@typescript-eslint/eslint-plugin/dist/rules/return-await.js')).default.default, [{
+		}], 0),
 
 		// vuejs/core rules
 		// 'prefer-ts-expect-error': convertRule((await import('./node_modules/@typescript-eslint/eslint-plugin/dist/rules/prefer-ts-expect-error.js')).default.default, [], 1),
